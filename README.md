@@ -240,8 +240,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## LIVE DEMO
 
 **Demo:**   0xReLogic.my.id
+
 **Desktop:** Works well across different browsers & operating systems 
+
 **Mobile:** Responsive design works on all devices  
+
 **Performance:** Lighthouse Mobile 95, Desktop 100  
 **Documentation:** Available in repository 
 
