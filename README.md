@@ -9,7 +9,6 @@
 
 **JasaHub** adalah platform freelance marketplace yang dikhususkan untuk pasar Indonesia, menghubungkan freelancer lokal dengan klien yang membutuhkan jasa profesional.
 
-![JasaHub Preview](https://0xrelogic.my.id/)
 
 ## KEY FEATURES
 
