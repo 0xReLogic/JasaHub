@@ -1,28 +1,38 @@
-# 🚀 JasaHub - Indonesian Freelance Marketplace
+# JasaHub - Indonesian Freelance Marketplace
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?logo=typescript)](https://www.typescriptlang.org/)
+[![Supabase](https://img.shields.io/badge/Supabase-Backend-green?logo=supabase)](https://supabase.com/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-38B2AC?logo=tailwind-css)](https://tailwindcss.com/)
+[![Vercel](https://img.shields.io/badge/Deploy-Vercel-000000?logo=vercel)](https://vercel.com/)
 
 **JasaHub** adalah platform freelance marketplace yang dikhususkan untuk pasar Indonesia, menghubungkan freelancer lokal dengan klien yang membutuhkan jasa profesional.
 
 ![JasaHub Preview](https://via.placeholder.com/1200x600/3B82F6/FFFFFF?text=JasaHub+-+Indonesian+Freelance+Marketplace)
 
-## ✨ **KEY FEATURES**
+## KEY FEATURES
 
-### 🔥 **Full-Stack Architecture**
+### Full-Stack Architecture
 - **Frontend:** Next.js 15 + TypeScript + Tailwind CSS
 - **Backend:** Supabase (PostgreSQL + Real-time)
 - **Authentication:** JWT-based dengan email verification
 - **Database:** 9 tables dengan Row Level Security (RLS)
 - **Real-time:** Live messaging & notifications
 
-### 🎯 **Core Functionalities**
-- ✅ **User Authentication** (Register/Login/Logout)
-- ✅ **Role-based Access** (Seller/Buyer/Admin)
-- ✅ **Dashboard System** (Seller & Buyer dashboards)
-- ✅ **Gig Creation** (Multi-step wizard dengan packages)
-- ✅ **Real-time Chat** (Live messaging system)
-- ✅ **Browse & Search** (Advanced filtering)
-- ✅ **Responsive Design** (Mobile-first approach)
+### Core Functionalities
+- **User Authentication** (Register/Login/Logout)
+- **Role-based Access** (Seller/Buyer/Admin)
+- **Dashboard System** (Seller & Buyer dashboards)
+- **Gig Creation** (Multi-step wizard dengan packages)
+- **Real-time Chat** (Live messaging system)
+- **Browse & Search** (Advanced filtering)
+- **Responsive Design** (Mobile-first approach)
+- **Payment Integration** (Secure transaction processing)
+- **Order Management** (Complete workflow from order to delivery)
+- **Review & Rating System** (Community feedback mechanism)
 
-### 🏛️ **Database Schema**
+### Database Schema
 ```sql
 - profiles      (User data & roles)
 - categories    (Service categories) 
@@ -35,7 +45,7 @@
 - order_requirements (Custom requirements)
 ```
 
-## 🚦 **GETTING STARTED**
+## GETTING STARTED
 
 ### Prerequisites
 - Node.js 18+ 
@@ -71,71 +81,72 @@ npm run dev
 # Open http://localhost:3000
 ```
 
-## 📱 **PAGES & FEATURES**
+## PAGES & FEATURES
 
-### 🏠 **Public Pages**
+### Public Pages
 - **Landing Page** (`/`) - Hero section, categories, featured gigs
 - **Browse Gigs** (`/browse`) - Search & filter services
-- **Category Pages** (`/categories/*`) - Category-specific listings
-- **Gig Details** (`/gig/[id]`) - Service details & packages
+- **Gig Details** (`/gig/[id]`) - Service details & packages (Planned)
 
-### 🔐 **Authentication**
-- **Register** (`/auth/register`) - Email verification required
+### Authentication
+- **Register** (`/auth/register`) - Email verification system
 - **Login** (`/auth/login`) - JWT session management
-- **Password Reset** (`/auth/forgot-password`) - Email recovery
+- **Logout** - Secure session termination
 
-### 📊 **Dashboard System**
+### Dashboard System
 - **Main Dashboard** (`/dashboard`) - Role-based overview
 - **Seller Dashboard** - Gig management, orders, earnings
 - **Buyer Dashboard** - Order history, favorites, reviews
 - **Profile Settings** (`/dashboard/profile`) - Account management
 
-### 💬 **Communication**
+### Communication
 - **Messages** (`/dashboard/messages`) - Real-time chat system
 - **Notifications** - System alerts & updates
 
-### 🛒 **Seller Features**
-- **Create Gig** (`/dashboard/seller/create-gig`) - Multi-step wizard
-- **Manage Gigs** (`/dashboard/seller/gigs`) - Edit, pause, analytics
+### Seller Features
+- **Create Gig** (`/dashboard/create-gig`) - Multi-step wizard
+- **Manage Gigs** (`/dashboard/gigs`) - Edit, view analytics
 - **Order Management** - Status tracking, delivery
+- **Earnings Overview** - Revenue and performance metrics
 
-## 🎨 **UI/UX HIGHLIGHTS**
+## UI/UX HIGHLIGHTS
 
-### 🌟 **Modern Design**
+### Modern Design
 - **Glassmorphism** effects on hero section
 - **Gradient backgrounds** dengan Indonesian color palette
 - **Professional card** layouts untuk gig listings
 - **Responsive grid** system untuk semua screen sizes
 
-### 🔥 **Interactive Components**
-- **Smart search** dengan real-time suggestions
-- **Multi-step forms** dengan progress indicators
-- **Real-time chat** interface dengan typing indicators
-- **Dropdown menus** dengan smooth animations
+### Interactive Components
+- **Search functionality** with category filtering
+- **Multi-step forms** with progress indicators
+- **Real-time chat** interface system
+- **Dropdown menus** with smooth animations
+- **Professional image galleries** from Unsplash integration
 
-### 📱 **Mobile Experience**
+### Mobile Experience
 - **Touch-friendly** navigation
 - **Optimized layouts** untuk mobile screens
 - **Fast loading** dengan image optimization
 - **PWA-ready** architecture
 
-## 🗄️ **DATABASE DESIGN**
+## DATABASE DESIGN
 
-### 🔒 **Security Features**
+### Security Features
 - **Row Level Security (RLS)** pada semua tables
 - **JWT-based** authentication
 - **Role-based** access control
 - **Input sanitization** & validation
 
-### ⚡ **Performance Optimizations**
+### Performance Optimizations
 - **Database indexing** untuk fast queries
 - **Real-time subscriptions** untuk live features
 - **Optimistic updates** untuk better UX
 - **Caching strategies** untuk static data
 
-## 🌐 **DEPLOYMENT**
+## DEPLOYMENT
 
-### 🚀 **Vercel Deployment**
+### Vercel Deployment
 ```bash
 # Connect to Vercel
 npm install -g vercel
@@ -145,15 +156,15 @@ vercel
 # Add your Supabase credentials
 ```
 
-### 🔧 **Production Configuration**
+### Production Configuration
 - **Domain setup** dengan custom domain
 - **SSL certificates** automatic via Vercel
 - **CDN optimization** untuk global performance
 - **Analytics integration** ready
 
-## 👨‍💻 **DEVELOPMENT**
+## DEVELOPMENT
 
-### 🛠️ **Tech Stack**
+### Tech Stack
 ```json
 {
   "frontend": "Next.js 15 + TypeScript + Tailwind CSS",
@@ -164,7 +175,7 @@ vercel
 }
 ```
 
-### 📝 **Code Structure**
+### Code Structure
 ```
 src/
 ├── app/                 # Next.js 15 App Router
@@ -179,61 +190,105 @@ src/
 └── styles/             # Global styles & Tailwind
 ```
 
-### 🧪 **Quality Assurance**
+### Quality Assurance
 - **TypeScript** untuk type safety
 - **ESLint** configuration
 - **Responsive design** testing
 - **Cross-browser** compatibility
 
-## 🎯 **BUSINESS MODEL**
+## BUSINESS MODEL
 
-### 💰 **Revenue Streams**
+### Revenue Streams
 - **Commission fees** dari setiap transaksi (5-10%)
 - **Premium memberships** untuk sellers
 - **Featured listings** untuk better visibility
 - **Advertising revenue** dari promoted gigs
 
-### 📈 **Market Opportunity**
+### Market Opportunity
 - **Target Market:** Indonesian freelancers & SMEs
 - **Market Size:** $2B+ Indonesian digital services market
 - **Growth Potential:** 25%+ YoY dalam digital economy
 - **Competitive Edge:** Fokus pada bahasa & budaya Indonesia
 
-## 🤝 **CONTRIBUTING**
+## CONTRIBUTING
 
-### 🔄 **Development Workflow**
+### Development Workflow
 1. Fork repository
 2. Create feature branch (`git checkout -b feature/AmazingFeature`)
 3. Commit changes (`git commit -m 'Add AmazingFeature'`)
 4. Push to branch (`git push origin feature/AmazingFeature`)
 5. Open Pull Request
 
-### 🐛 **Bug Reports**
+### Bug Reports
 - Use GitHub Issues untuk bug reports
 - Include screenshots & reproduction steps
 - Mention browser & OS information
 
-## 📄 **LICENSE**
+## LICENSE
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 📞 **CONTACT**
+## CONTACT
 
 **Developer:** AllenElzayn  
-**Email:** maedeeaew@gmail.com  
+**Email:** hi@allenarch.dev  
 **GitHub:** [@0xReLogic](https://github.com/0xReLogic)  
-**Project:** [JasaHub Repository](https://github.com/0xReLogic/JasaHub)
+**Project:** [JasaHub Repository](https://github.com/0xReLogic/JasaHub)  
+**Website:** [AllenArch.dev](https://allenarch.dev)
 
 ---
 
-## 🚀 **LIVE DEMO**
+## LIVE DEMO
 
-**🌐 Website:** [Coming Soon - Deploy to Vercel]  
-**📱 Mobile:** Responsive design works on all devices  
-**⚡ Performance:** Lighthouse score 95+ 
+**Demo:**   0xReLogic.my.id
+**Desktop:** Works well across different browsers & operating systems 
+**Mobile:** Responsive design works on all devices  
+**Performance:** Lighthouse Mobile 95, Desktop 100  
+**Documentation:** Available in repository 
 
 ---
 
-**Made with ❤️ for Indonesian Digital Economy**
+**Made with love for Indonesian Digital Economy**
 
 *JasaHub - Connecting Indonesian Talent with Global Opportunities*
+
+## ROADMAP
+
+### Fase 1 (Selesai)
+- Fungsionalitas marketplace inti
+- Sistem autentikasi dan profil pengguna
+- Sistem pesan real-time
+- Dashboard untuk seller dan buyer
+- Pembuatan dan pengelolaan gig
+- Fitur browse dan pencarian
+- Desain UI/UX profesional
+
+### Fase 2 (Sprint Berikutnya)
+- Integrasi pembayaran real (Stripe/Midtrans)
+- Sistem upload file untuk portofolio
+- Filter pencarian lanjutan
+- Optimasi aplikasi mobile
+- Notifikasi email
+
+### Fase 3 (Masa Depan)
+- Rekomendasi gig berbasis AI
+- Booking konsultasi video
+- Dashboard analytics lanjutan
+- Dukungan multi-bahasa
+- Aplikasi mobile
+
+### Fase 4 (Jangka Panjang)
+- Solusi enterprise
+- Ekspansi internasional
+- Ekosistem partnership
+- Fitur AI lanjutan
+
+---
+
+## CONTRIBUTORS
+
+Thanks to all contributors who have helped make JasaHub better!
+
+<!-- Contributors will be automatically generated -->
+
+---
