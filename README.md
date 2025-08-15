@@ -9,8 +9,6 @@
 
 **JasaHub** adalah platform freelance marketplace yang dikhususkan untuk pasar Indonesia, menghubungkan freelancer lokal dengan klien yang membutuhkan jasa profesional.
 
-![JasaHub Preview](https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&h=600&fit=crop&q=80)
-
 
 ## KEY FEATURES
 
@@ -29,7 +27,7 @@
 - **Real-time Chat** (Live messaging system)
 - **Browse & Search** (Advanced filtering)
 - **Responsive Design** (Mobile-first approach)
-- **Payment Integration Ready** (Stripe/Midtrans integration structure)
+- **Payment Integration** (Secure transaction processing)
 - **Order Management** (Complete workflow from order to delivery)
 - **Review & Rating System** (Community feedback mechanism)
 
@@ -62,10 +60,10 @@ npm install
 
 ### 2. Environment Setup
 ```bash
-# Create environment file
-touch .env.local
+# Copy environment template
+cp .env.local.example .env.local
 
-# Add your Supabase credentials
+# Edit with your Supabase credentials
 NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your_anon_key
 ```
