@@ -199,6 +199,7 @@ src/
 
 ### Revenue Streams
 - **Commission fees** dari setiap transaksi (5-10%)
+- **Google AdSense ready** (ads.txt configured)
 - **Premium memberships** untuk sellers
 - **Featured listings** untuk better visibility
 - **Advertising revenue** dari promoted gigs
