@@ -8,13 +8,13 @@ const sampleGigs = [
     title: "Desain Logo Profesional & Brand Identity Lengkap",
     seller: {
       username: "designmaster_id",
-      avatar: "/api/placeholder/100/100",
+      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&q=80&crop=face",
       level: "Top Rated"
     },
     rating: 4.9,
     reviews: 1247,
     price: 150000,
-    image: "/api/placeholder/400/250",
+    image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=400&h=250&fit=crop&q=80",
     deliveryTime: 2,
     category: "Design",
     tags: ["logo", "branding", "identity"]
@@ -24,13 +24,13 @@ const sampleGigs = [
     title: "Website Responsive Full-Stack dengan React & Next.js",
     seller: {
       username: "webdev_pro",
-      avatar: "/api/placeholder/100/100",
+      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&q=80&crop=face",
       level: "Level 2"
     },
     rating: 5.0,
     reviews: 892,
     price: 2500000,
-    image: "/api/placeholder/400/250",
+    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=250&fit=crop&q=80",
     deliveryTime: 7,
     category: "Development",
     tags: ["react", "nextjs", "fullstack"]
@@ -40,13 +40,13 @@ const sampleGigs = [
     title: "Social Media Marketing Strategy & Management",
     seller: {
       username: "marketingguru",
-      avatar: "/api/placeholder/100/100",
+      avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b047?w=100&h=100&fit=crop&q=80&crop=face",
       level: "Top Rated"
     },
     rating: 4.8,
     reviews: 634,
     price: 500000,
-    image: "/api/placeholder/400/250",
+    image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=250&fit=crop&q=80",
     deliveryTime: 3,
     category: "Marketing",
     tags: ["social media", "marketing", "strategy"]
@@ -56,13 +56,13 @@ const sampleGigs = [
     title: "Artikel SEO & Blog Post Berkualitas Tinggi",
     seller: {
       username: "content_writer",
-      avatar: "/api/placeholder/100/100",
+      avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&q=80&crop=face",
       level: "Level 2"
     },
     rating: 4.9,
     reviews: 445,
     price: 75000,
-    image: "/api/placeholder/400/250",
+    image: "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=400&h=250&fit=crop&q=80",
     deliveryTime: 1,
     category: "Writing",
     tags: ["seo", "content", "blog"]
@@ -72,13 +72,13 @@ const sampleGigs = [
     title: "Video Editing & Motion Graphics Profesional",
     seller: {
       username: "video_creator",
-      avatar: "/api/placeholder/100/100",
+      avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&q=80&crop=face",
       level: "Level 1"
     },
     rating: 4.7,
     reviews: 321,
     price: 300000,
-    image: "/api/placeholder/400/250",
+    image: "https://images.unsplash.com/photo-1536240478700-b869070f9279?w=400&h=250&fit=crop&q=80",
     deliveryTime: 5,
     category: "Video",
     tags: ["video editing", "motion graphics", "animation"]
@@ -88,13 +88,13 @@ const sampleGigs = [
     title: "UI/UX Design untuk Mobile & Web Application",
     seller: {
       username: "uxdesigner",
-      avatar: "/api/placeholder/100/100",
+      avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&h=100&fit=crop&q=80&crop=face",
       level: "Top Rated"
     },
     rating: 4.9,
     reviews: 789,
     price: 800000,
-    image: "/api/placeholder/400/250",
+    image: "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=400&h=250&fit=crop&q=80",
     deliveryTime: 4,
     category: "Design",
     tags: ["ui design", "ux design", "mobile app"]

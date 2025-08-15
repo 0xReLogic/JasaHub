@@ -17,7 +17,7 @@ const featuredGigs = [
     rating: 4.9,
     reviews: 1247,
     price: 150000,
-    image: "/api/placeholder/400/250",
+    image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=400&h=250&fit=crop&q=80",
     deliveryTime: 2,
     category: "Design"
   },
@@ -28,7 +28,7 @@ const featuredGigs = [
     rating: 5.0,
     reviews: 892,
     price: 2500000,
-    image: "/api/placeholder/400/250",
+    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=250&fit=crop&q=80",
     deliveryTime: 7,
     category: "Development"
   },
@@ -39,7 +39,7 @@ const featuredGigs = [
     rating: 4.8,
     reviews: 634,
     price: 500000,
-    image: "/api/placeholder/400/250",
+    image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=250&fit=crop&q=80",
     deliveryTime: 3,
     category: "Marketing"
   },
@@ -50,7 +50,7 @@ const featuredGigs = [
     rating: 4.9,
     reviews: 445,
     price: 75000,
-    image: "/api/placeholder/400/250",
+    image: "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=400&h=250&fit=crop&q=80",
     deliveryTime: 1,
     category: "Writing"
   }
