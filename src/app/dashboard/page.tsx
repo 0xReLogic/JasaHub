@@ -10,7 +10,6 @@ import {
   UserGroupIcon,
   ShoppingBagIcon,
   ChatBubbleLeftRightIcon,
-  BellIcon,
   PlusIcon,
   EyeIcon,
   HeartIcon,
@@ -93,7 +92,7 @@ export default function DashboardPage() {
   )
 }
 
-function SellerDashboard({ profile }: { profile: any }) {
+function SellerDashboard({ profile }: { profile: { full_name: string; email: string; role: string } }) {
   const stats = [
     {
       name: 'Total Penjualan',
@@ -216,7 +215,7 @@ function SellerDashboard({ profile }: { profile: any }) {
   )
 }
 
-function BuyerDashboard({ profile }: { profile: any }) {
+function BuyerDashboard({ profile }: { profile: { full_name: string; email: string; role: string } }) {
   const stats = [
     {
       name: 'Total Pesanan',

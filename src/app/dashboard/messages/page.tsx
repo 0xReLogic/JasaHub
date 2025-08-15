@@ -9,6 +9,7 @@ import {
   PaperClipIcon,
   FaceSmileIcon,
   EllipsisVerticalIcon,
+  ChatBubbleLeftRightIcon,
 } from '@heroicons/react/24/outline'
 
 interface Message {
@@ -64,6 +65,41 @@ export default function MessagesPage() {
 
   useEffect(() => {
     if (selectedConversation && user) {
+      const fetchMessages = async (conversationId: string) => {
+        setLoadingMessages(true)
+        
+        // Mock messages for demo
+        const mockMessages: Message[] = [
+          {
+            id: '1',
+            content: 'Halo! Saya tertarik dengan package premium untuk logo design.',
+            sender_id: user!.id,
+            recipient_id: '2',
+            created_at: '2025-01-15T09:00:00Z',
+            read_at: '2025-01-15T09:01:00Z',
+            sender: {
+              full_name: user!.email?.split('@')[0] || 'You',
+              avatar_url: null
+            }
+          },
+          {
+            id: '2',
+            content: 'Halo juga! Terima kasih sudah memilih jasa saya.',
+            sender_id: '2',
+            recipient_id: user!.id,
+            created_at: '2025-01-15T09:05:00Z',
+            read_at: '2025-01-15T09:06:00Z',
+            sender: {
+              full_name: 'Design Master',
+              avatar_url: null
+            }
+          }
+        ]
+        
+        setMessages(mockMessages)
+        setLoadingMessages(false)
+      }
+
       fetchMessages(selectedConversation)
       
       // Subscribe to real-time messages
@@ -151,76 +187,7 @@ export default function MessagesPage() {
     setConversations(mockConversations)
   }
 
-  const fetchMessages = async (conversationId: string) => {
-    setLoadingMessages(true)
-    
-    // Mock messages for demo
-    const mockMessages: Message[] = [
-      {
-        id: '1',
-        content: 'Halo! Saya tertarik dengan package premium untuk logo design.',
-        sender_id: user!.id,
-        recipient_id: '2',
-        created_at: '2025-01-15T09:00:00Z',
-        read_at: '2025-01-15T09:01:00Z',
-        sender: {
-          full_name: user!.email?.split('@')[0] || 'You',
-          avatar_url: null
-        }
-      },
-      {
-        id: '2',
-        content: 'Halo juga! Terima kasih sudah memilih jasa saya. Untuk package premium, saya bisa buatkan 3 konsep logo dengan unlimited revisi.',
-        sender_id: '2',
-        recipient_id: user!.id,
-        created_at: '2025-01-15T09:05:00Z',
-        read_at: '2025-01-15T09:06:00Z',
-        sender: {
-          full_name: 'Design Master',
-          avatar_url: null
-        }
-      },
-      {
-        id: '3',
-        content: 'Sounds good! Bisa minta contoh portfolio untuk logo restaurant?',
-        sender_id: user!.id,
-        recipient_id: '2',
-        created_at: '2025-01-15T09:10:00Z',
-        read_at: '2025-01-15T09:11:00Z',
-        sender: {
-          full_name: user!.email?.split('@')[0] || 'You',
-          avatar_url: null
-        }
-      },
-      {
-        id: '4',
-        content: 'Tentu! Saya kirim beberapa sample logo restaurant yang pernah saya buat.',
-        sender_id: '2',
-        recipient_id: user!.id,
-        created_at: '2025-01-15T09:15:00Z',
-        read_at: null,
-        sender: {
-          full_name: 'Design Master',
-          avatar_url: null
-        }
-      },
-      {
-        id: '5',
-        content: 'Halo, saya sudah selesai dengan desain logonya. Silakan dicek!',
-        sender_id: '2',
-        recipient_id: user!.id,
-        created_at: '2025-01-15T10:30:00Z',
-        read_at: null,
-        sender: {
-          full_name: 'Design Master',
-          avatar_url: null
-        }
-      }
-    ]
-    
-    setMessages(mockMessages)
-    setLoadingMessages(false)
-  }
+
 
   const sendMessage = async () => {
     if (!newMessage.trim() || !selectedConversation || !user) return

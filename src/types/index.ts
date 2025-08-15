@@ -118,7 +118,7 @@ export interface Notification {
   type: 'order' | 'message' | 'review' | 'system'
   title: string
   message: string
-  data: any
+  data: Record<string, unknown>
   read: boolean
   created_at: string
 }

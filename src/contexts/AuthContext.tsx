@@ -10,10 +10,10 @@ interface AuthContextType {
   profile: ProfileUser | null
   session: Session | null
   loading: boolean
-  signIn: (email: string, password: string) => Promise<{ error: any }>
-  signUp: (email: string, password: string, fullName: string) => Promise<{ error: any }>
+  signIn: (email: string, password: string) => Promise<{ error: Error | null }>
+  signUp: (email: string, password: string, fullName: string) => Promise<{ error: Error | null }>
   signOut: () => Promise<void>
-  updateProfile: (data: Partial<ProfileUser>) => Promise<{ error: any }>
+  updateProfile: (data: Partial<ProfileUser>) => Promise<{ error: Error | null }>
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined)
