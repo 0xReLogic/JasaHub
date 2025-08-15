@@ -3,10 +3,8 @@
 import { useState, useEffect } from 'react'
 import { useAuth } from '@/contexts/AuthContext'
 import { useRouter } from 'next/navigation'
-import { supabase } from '@/lib/supabase'
 import {
   PhotoIcon,
-  VideoCameraIcon,
   PlusIcon,
   XMarkIcon,
   InformationCircleIcon
@@ -80,7 +78,7 @@ export default function CreateGigPage() {
     setCategories(mockCategories)
   }
 
-  const handleInputChange = (field: string, value: any) => {
+  const handleInputChange = (field: string, value: string | string[]) => {
     setFormData(prev => ({
       ...prev,
       [field]: value
@@ -104,7 +102,7 @@ export default function CreateGigPage() {
     }))
   }
 
-  const updatePackage = (index: number, field: string, value: any) => {
+  const updatePackage = (index: number, field: string, value: string | number | string[]) => {
     setPackages(prev => prev.map((pkg, i) => 
       i === index ? { ...pkg, [field]: value } : pkg
     ))
